@@ -105,7 +105,7 @@ $(document).ready(function () {
             var content = items.join('');
             var contentModal = modalPortfolio.join('');
             listPortfolio.append(content);
-            listModal.append(contentModal);
+            //listModal.append(contentModal);
         }
     });
 });
