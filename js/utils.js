@@ -47,7 +47,7 @@ $(document).ready(function () {
         
         var items = data.portfolios.map(function (item) {
             return '<div class="col-sm-4 portfolio-item'+item.class+'">\
-                <a href="#portfolioModal'+item.class + item.name.lowercase()+'" class="portfolio-link" data-toggle="modal">\
+                <a href="#portfolioModal' + item.class + item.name.toLowerCase() + '" class="portfolio-link" data-toggle="modal">\
                     <div class="caption">\
                         <div class="caption-content">\
                             <i class="fa fa-search-plus fa-3x"></i>\
