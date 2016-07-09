@@ -50,7 +50,7 @@ $(document).ready(function () {
         
         data.portfolios.map(function (item) {
             itemPortfolio.push('<div class="col-sm-4 portfolio-item ' + item.class + '">\
-                <a href="#portfolioModal' + item.class + item.name.toLowerCase() + '" class="portfolio-link" data-toggle="modal">\
+                <a href="#portfolioModal' + item.class + item.id.toLowerCase() + '" class="portfolio-link" data-toggle="modal">\
                     <div class="caption">\
                         <div class="caption-content">\
                             <i class="fa fa-search-plus fa-3x"></i>\
@@ -60,7 +60,7 @@ $(document).ready(function () {
                 </a>\
             </div>');
 
-            modalPortfolio.push('<div class="portfolio-modal modal fade" id="portfolioModal' + item.class + item.name.toLowerCase() + '" tabindex="-1" role="dialog" aria-hidden="true">\
+            modalPortfolio.push('<div class="portfolio-modal modal fade" id="portfolioModal' + item.class + item.id.toLowerCase() + '" tabindex="-1" role="dialog" aria-hidden="true">\
                                 <div class="modal-content">\
                                     <div class="close-modal" data-dismiss="modal">\
                                         <div class="lr">\
