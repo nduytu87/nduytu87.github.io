@@ -48,7 +48,7 @@ $(document).ready(function () {
         var itemPortfolio = [];
         var modalPortfolio = [];
         
-        var items = data.portfolios.map(function (item) {
+        data.portfolios.map(function (item) {
             itemPortfolio.push('<div class="col-sm-4 portfolio-item ' + item.class + '">\
                 <a href="#portfolioModal' + item.class + item.name.toLowerCase() + '" class="portfolio-link" data-toggle="modal">\
                     <div class="caption">\
@@ -101,11 +101,11 @@ $(document).ready(function () {
 
         //listPortfolio.empty();
        // listModal.empty();
-        if (items.length) {
-            var content = items.join('');
+        if (itemPortfolio.length) {
+            var content = itemPortfolio.join('');
             var contentModal = modalPortfolio.join('');
             listPortfolio.append(content);
-            //listModal.append(contentModal);
+            listModal.append(contentModal);
         }
     });
 });
