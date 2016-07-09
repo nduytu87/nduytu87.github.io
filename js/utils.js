@@ -99,8 +99,8 @@ $(document).ready(function () {
                         </div>')
         });
 
-        listPortfolio.empty();
-        listModal.empty();
+        //listPortfolio.empty();
+       // listModal.empty();
         if (items.length) {
             var content = items.join('');
             var contentModal = modalPortfolio.join('');
