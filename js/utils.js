@@ -41,7 +41,7 @@ var initIsotope = function () {
 
 $(document).ready(function () {
 
-    $.getJSON('data/portfolio.json', function (data) {
+    $.getJSON('data/portfolio.js', function (data) {
         var listPortfolio = $('.grid');
         var listModal = $('.list-modal-port');
         var itemPortfolio = [];
@@ -59,9 +59,10 @@ $(document).ready(function () {
                 </a>\
             </div>');
             //Carousel for model
-            var carouselContent = item.image.map(function (img) {
+          /*  var carouselContent = item.image.map(function (img) {
                 return '<div> <img src="img/portfolio/' + img + '" class="img-centered" alt=""> </div>';
-            });
+            });*/
+            var carouselContent = '<div> <img src="img/portfolio/' + item.image[0] + '" class="img-responsive img-centered" alt=""> </div>';
             modalPortfolio.push('<div class="portfolio-modal modal fade" id="portfolioModal' + item.class + item.id.toLowerCase() + '" tabindex="-1" role="dialog" aria-hidden="true">\
                                 <div class="modal-content">\
                                     <div class="close-modal" data-dismiss="modal">\
@@ -72,44 +73,16 @@ $(document).ready(function () {
                                     </div>\
                                     <div class="container">\
                                         <div class="row">\
-                                            <div class="col-lg-8 col-lg-offset-2">\
+                                            <div class="col-lg-12">\
                                                 <div class="modal-body">\
                                                     <div class="content-head center">\
 						                                                <h3 class="center_divider">\
-							                                                <em>\
-							                                                <span class="head-tngl-left1"></span>\
-							                                                <span class="head-tngl-left2"></span>\
-							                                                <span class="head-tngl-left3"></span>\
-                                                            Our Happy <span class="highlight-color">Clients</span>\
-                                                            <span class="head-tngl-right1"></span>\
-                                                            <span class="head-tngl-right2"></span>\
-                                                            <span class="head-tngl-right3"></span>\
-                                                            </em>\
+							                                               ' + item.name+ '\
                                                         </h3>\
-                                                        <div class="owl-buttons">\
-                                                            <div class="owl-prev">prev</div>\
-                                                            <div class="owl-next">next</div>\
-                                                        </div>\
                                                     </div>\
-                                                    <div class="owl-carousel owl-theme">\
-                                                        '+carouselContent+'\
-                                                    </div>\
-                                                    <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>\
-                                                    <ul class="list-inline item-details">\
-                                                        <li>Client:\
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>\
-                                    </strong>\
-                                </li>\
-                                <li>Date:\
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>\
-                                    </strong>\
-                                </li>\
-                                <li>Service:\
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>\
-                                    </strong>\
-                                </li>\
-                            </ul>\
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>\
+ <p>' + item.description + '\</p>\
+                                                    ' + carouselContent + '\
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>\
                         </div>\
                         </div>\
                         </div>\
@@ -128,7 +101,7 @@ $(document).ready(function () {
                 layoutMode: 'fitRows'
             });
             initIsotope();
-            $('.owl-carousel').owlCarousel({
+          /*  $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
@@ -150,7 +123,7 @@ $(document).ready(function () {
             })
             $(".prev").click(function () {
                 owl.trigger('owl.owl-prev');
-            })
+            })*/
         }
     });
 

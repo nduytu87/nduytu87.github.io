@@ -931,3 +931,33 @@ a.btn-regular.portfolio_button {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.intro-text a{
+    color: #fff;    
+}
+.intro-text h3 {
+    text-transform: none;
+}
+.intro-text ul > li {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-align: left;
+}
+.skill-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+.progress-container {
+    background: #ecf0f1;
+    border-radius: 5px;
+    height: 30px;
+}
+.progressbar {
+    background: #FF8C00;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+     height: 30px;
+}
+.text-progress {
+    text-align: center;
+    font-size: 1.5em;
+}
