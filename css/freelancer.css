@@ -6,6 +6,8 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  background: url(../img/bg.png)  #ededed repeat ;
+ 
 }
 p {
   font-size: 20px;
@@ -69,8 +71,8 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
-  color: white;
+  //background: #18BC9C;
+  color:#737373;;
 }
 header .container {
   padding-top: 100px;
@@ -87,9 +89,14 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  color:#109f9a;
 }
 header .intro-text .skills {
   font-size: 1.25em;
+  font-weight: 300;
+}
+header .intro-text .me {
+  font-size: 2em;
   font-weight: 300;
 }
 @media (min-width: 768px) {
@@ -98,7 +105,7 @@ header .intro-text .skills {
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 3em;
   }
   header .intro-text .skills {
     font-size: 1.75em;
@@ -187,8 +194,8 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
-  color: white;
+  /*background: #18BC9C;*/
+  color: #737373;
 }
 @media (max-width: 767px) {
   section {
@@ -250,19 +257,18 @@ section.success {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  /*border-bottom: 1px solid #eeeeee;*/
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
   position: relative;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 10px;
+  padding-left: 10px;
   border: none;
   border-radius: 0;
   font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
+ 
   resize: none;
 }
 .floating-label-form-group label {
@@ -292,9 +298,9 @@ section.success {
 .floating-label-form-group-with-focus label {
   color: #18BC9C;
 }
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
-}
+/*form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #737373;
+}*/
 footer {
   color: white;
 }
@@ -511,7 +517,7 @@ fieldset[disabled] .btn-success.active {
 .portfolioFilter {
 	display: table;
 	margin: 0 auto 50px;
-	padding: 0 12px;
+	/*padding: 0 12px;*/
 	border-radius: 4px;
 	background: #f9f9f9;
 }
@@ -932,7 +938,7 @@ a.btn-regular.portfolio_button {
     border-top-right-radius: 5px;
 }
 .intro-text a{
-    color: #fff;    
+    color:#737373;;    
 }
 .intro-text h3 {
     text-transform: none;
@@ -943,16 +949,17 @@ a.btn-regular.portfolio_button {
     text-align: left;
 }
 .skill-title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    margin-top: 10px;
 }
 .progress-container {
-    background: #ecf0f1;
+    background: #fff;
     border-radius: 5px;
     height: 30px;
 }
 .progressbar {
-    background: #FF8C00;
+    background: #18BC9C;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
      height: 30px;
@@ -960,4 +967,5 @@ a.btn-regular.portfolio_button {
 .text-progress {
     text-align: center;
     font-size: 1.5em;
+    color:#fff;
 }
